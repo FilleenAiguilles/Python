@@ -1,8 +1,8 @@
 ## Simple Operations
 Python also carries out multiplication and division, using an asterisk to indicate multiplication and a forward slash to indicate division.
-...
+```
 >>> 2 * (3 + 4)
 14
 >>> 10 / 2
 5.0
-...
+```
