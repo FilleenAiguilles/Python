@@ -52,3 +52,50 @@ Owner: Good morning, Sir. Welcome to the National Cheese Emporium."""
 
 'Customer: Good morning.\nOwner: Good morning, Sir. Welcome to the National Cheese Emporium.'
 ```
+## Output 
+In Python, you can use the print function to produce output. This displays a textual representation of something to the screen. When a string is printed, the quotes around it are not displayed.
+```
+>>> print("Hello\nWorld!")
+Hello
+World!
+```
+## Input 
+To get input from the user in Python, you can use the intuitively named input function. 
+The function prompts the user for input, and returns what they enter as a string (with the contents automatically escaped).
+```
+>>> input("Enter something please: ")
+Enter something please: This is what\nthe user enters!
+
+'This is what\\nthe user enters!'
+```
+## Concatenation
+As with integers and floats, strings in Python can be added, using a process called concatenation, which can be done on any two strings. 
+When concatenating strings, it doesn't matter whether they've been created with single or double quotes.
+```
+>>> "Spam" + 'eggs'
+'Spameggs'
+>>> print("First string" + ", " + "second string")
+First string, second string
+```
+Even if your strings contain numbers, they are still added as strings rather than integers. Adding a string to a number produces an error, as even though they might look similar, they are two different entities.
+```
+>>> "2" + "2"
+'22'
+>>> 1 + '2' + 3 + '4'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+## String Operations
+Strings can also be multiplied by integers. This produces a repeated version of the original string. The order of the string and the integer doesn't matter, but the string usually comes first.
+Strings can't be multiplied by other strings. Strings also can't be multiplied by floats, even if the floats are whole numbers.
+```
+>>> print("spam" * 3)
+spamspamspam
+>>> 4 * '2'
+'2222'
+>>> '17' * '87'
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> 'pythonisfun' * 7.0
+TypeError: can't multiply sequence by non-int of type 'float'
+```
