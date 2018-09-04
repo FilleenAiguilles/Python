@@ -6,3 +6,11 @@ Python also carries out multiplication and division, using an asterisk to indica
 >>> 10 / 2
 5.0
 ```
+Dividing by zero in Python produces an error, as no answer can be calculated.
+```
+>>> 11 / 0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+```
+** In Python, the last line of an error message indicates the error's type.Read error messages carefully, as they often tell you how to fix a program! **
