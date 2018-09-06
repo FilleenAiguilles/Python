@@ -99,3 +99,45 @@ TypeError: can't multiply sequence by non-int of type 'str'
 >>> 'pythonisfun' * 7.0
 TypeError: can't multiply sequence by non-int of type 'float'
 ```
+## Type conversion
+In Python, the types we have used so far have been integers, floats, and strings. The functions used to convert to these are int, float and str, respectively.
+We can convert strings into integer by using *int*
+```
+>>> "2" + "3"
+'23'
+>>> int("2") + int("3")
+5
+```
+Another example of type conversion is turning user input (which is a string) to numbers (integers or floats), to allow for the performance of calculations.
+```
+>>> float(input("Enter a number: ")) + float(input("Enter another number: "))
+Enter a number: 40
+Enter another number: 2
+42.0
+```
+**Strings can't be multiplied by other strings. Strings also can't be multiplied by floats, even if the floats are whole numbers**
+
+## Variable Names
+
+Certain restrictions apply in regard to the characters that may be used in Python variable names. The only characters that are allowed are letters, numbers, and underscores. Also, they can't start with numbers. Not following these rules results in errors.
+```
+>>> this_is_a_normal_name = 7
+>>> 123abc = 7
+SyntaxError: invalid syntax
+>>> spaces are not allowed
+SyntaxError: invalid syntax
+```
+**Python is a case sensitive programming language. Thus, Lastname and lastname are two different variable names in Python.**
+
+Trying to reference a variable you haven't assigned to causes an error. 
+You can use the del statement to remove a variable, which means the reference from the name to the value is deleted, and trying to use the variable causes an error. Deleted variables can be reassigned to later as normal.
+```
+>>> foo = "a string"
+>>> foo
+'a string'
+>>> bar
+NameError: name 'bar' is not defined
+>>> del foo
+>>> foo
+NameError: name 'foo' is not defined
+```
